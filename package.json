@@ -14,6 +14,7 @@
     "chai": "*",
     "chai-http": "*",
     "connect": "*",
+    "serve-static": "*",
     "coffeelint": "*",
     "istanbul": "*",
     "mocha-lcov-reporter": "*",
@@ -26,5 +27,8 @@
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "minimatch": "^0.2.14"
   }
 }

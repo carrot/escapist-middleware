@@ -1,4 +1,7 @@
-module.exports = (opts) ->
+mm = require 'minimatch'
+
+module.exports = (opts = {}) ->
+  ignores = Array::concat(opts.ignore or '')
 
   return (req, res, next) ->
-    next(opts)
+    next(ignores.some((i) -> mm(req.url, i)))
