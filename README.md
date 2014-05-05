@@ -24,7 +24,7 @@ var http = require('http'),
     escapist = require('escapist-middleware');
 
 var app = connect()
-            .use(escapist('path/to/secret.txt'))
+            .use(escapist({ ignore: 'path/to/secret.txt' }))
             .use(connect.static('public'));
 
 http.createServer(app).listen(1111);
@@ -33,7 +33,7 @@ http.createServer(app).listen(1111);
 Also, as noted, you can pass an array of string and use globstars, like this:
 
 ```js
-escapist(['**/keys/id_rsa', 'plaintext_passwords/*'])
+escapist({ ignore: ['**/keys/id_rsa', 'plaintext_passwords/*'] })
 ```
 
 > **Note:** We do not endorse keeping ssh private keys and/or plaintext passwords in your repos.
