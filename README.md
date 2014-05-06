@@ -1,6 +1,6 @@
 # Escapist Middleware
 
-[![npm](http://img.shields.io/npm/v/escapist-middleware.svg?style=flat)](https://badge.fury.io/js/escapist-middleware) [![tests](http://img.shields.io/travis/carrot/escapist-middleware/master.svg?style=flat)](https://travis-ci.org/carrot/escapist-middleware) [![dependencies](http://img.shields.io/gemnasium/carrot/escapist-middleware.svg?style=flat)](https://david-dm.org/carrot/escapist-middleware)
+[![npm](http://img.shields.io/npm/v/escapist-middleware.svg?style=flat)](https://badge.fury.io/js/escapist-middleware) [![tests](http://img.shields.io/travis/carrot/escapist-middleware/master.svg?style=flat)](https://travis-ci.org/carrot/escapist-middleware) [![dependencies](http://img.shields.io/gemnasium/carrot/escapist-middleware.svg?style=flat)](https://gemnasium.com/carrot/escapist-middleware)
 
 Making trapdoors for secret files since 1748.
 
