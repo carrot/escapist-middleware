@@ -1,6 +1,6 @@
 {
   "name": "escapist-middleware",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Carrot Creative <dev@carrotcreative.com>",
   "description": "Ignore certain files so they are not served",
   "license": "MIT",
