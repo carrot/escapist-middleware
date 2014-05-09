@@ -5,7 +5,7 @@ describe 'basic', ->
 
   before ->
     @app = connect()
-            .use(escapist({ ignore: '/index.html' }))
+            .use(escapist('/index.html'))
             .use(serveStatic(path.join(base_path, 'basic')))
 
   it 'should block a page if matched', (done) ->
@@ -23,7 +23,7 @@ describe 'basic', ->
 describe 'recovery', ->
   before ->
     @app = connect()
-            .use(escapist({ ignore: '/index.html' }))
+            .use(escapist('/index.html'))
             .use(serveStatic(path.join(base_path, 'basic')))
             .use((err, req, res, next) -> res.statusCode = 404; next())
 
@@ -35,7 +35,7 @@ describe 'recovery', ->
 describe 'muliple patterns', ->
   before ->
     @app = connect()
-            .use(escapist({ ignore: ['/index.html', '/foo.*'] }))
+            .use(escapist(['/index.html', '/foo.*']))
             .use(serveStatic(path.join(base_path, 'basic')))
 
   it 'should ignore files based on multiple patterns', (done) ->
